@@ -14,7 +14,13 @@ body {
 	margin-bottom: 3px;
 	color: white;
 	background-color: #f7838d;
-	
+	transform: skewY(3deg);
+	transition: .2s;
+}
+
+.res:hover {
+	transform: scale(1.1);
+	font-size: 1.1em;
 }
 
 .tombol {
@@ -25,4 +31,10 @@ body {
 	color: #333;
 	margin:3px;
 	cursor: pointer;
+	transform: skewY(5deg);
+	transition: .2s;
+}
+
+.tombol:hover {
+	transform: translate(3px, 3px);
 }
