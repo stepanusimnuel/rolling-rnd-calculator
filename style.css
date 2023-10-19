@@ -1,23 +1,28 @@
 body {
- background-color: #ddd;
+	background-color: #ea435d;
 }
 
 .container {
- width: 250px;
- margin: 100px auto;
+	width: 250px;
+	margin: 100px auto;
 }
 
 .res{
- width: 100%;
- height: 50px;
- text-align: right;
- margin-bottom: 3px;
+	width: 100%;
+	height: 50px;
+	text-align: right;
+	margin-bottom: 3px;
+	color: white;
+	background-color: #f7838d;
+	
 }
 
 .tombol {
- width: 20%;
- height: 50px;
- font-size: 18px;
- margin:3px;
- cursor: pointer;
+	width: 20%;
+	height: 50px;
+	font-size: 18px;
+	background-color: #edc371;
+	color: #333;
+	margin:3px;
+	cursor: pointer;
 }
