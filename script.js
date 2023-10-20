@@ -1,5 +1,5 @@
 const result = document.querySelector('.res');
-
+ 
 document.addEventListener('click', function(e) {
  if(e.target.type == "button") {
   if(e.target.value == "cls") {
@@ -13,8 +13,19 @@ document.addEventListener('click', function(e) {
     result.value = "error pak";
    }
     
-  }
-  else result.value += e.target.value;
+  } else result.value += e.target.value;
  }
-});
+}); 
+
+document.addEventListener('keydown', function(e) {
+ if(result.value == '') result.value = "error pak";
+ if(e.code == "Enter") {
+  event.preventDefault();
+  try {
+   result.value = eval(result.value);
+  } catch(err){
+   result.value = "error pak";
+  }
+ }
+}); 
 
